@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+enum Currency {
+    CURRENCY_UNSPECIFIED = 0;
+    ADA = 1;
+    BTC = 2;
+    CZK = 3;
+    ETH = 4;
+    EUR = 5;
+    USD = 6;
+    YEN = 7;
+}
+
+message Money {
+    Currency currency = 1;
+    uint64 integral_number = 2;
+    uint32 decimal_number = 3;
+}
