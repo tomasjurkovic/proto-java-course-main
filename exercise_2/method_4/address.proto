@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+// this is created using packages in files
+package address;
+
+import "building.proto";
+import "city.proto";
+import "street.proto";
+
+message Address {
+    my.citypackage.City city = 1;
+    my.streetpackage.Street street = 2;
+    my.buildingpackage.Building building = 3;
+}

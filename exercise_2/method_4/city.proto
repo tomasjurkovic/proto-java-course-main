@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+// this is created using packages in files
+
+package city;
+
+enum Country {
+    COUNTRY_UNSPECIFIED = 0;
+    CZECH_REPUBLIC = 1;
+    GERMANY = 2;
+    SLOVAKIA = 3;
+    SWEDEN = 4;
+    USA = 5;
+    // ...
+}
+
+message City {
+    string name = 1;
+    string zip_code = 2;
+    Country country = 3;
+}
+
+

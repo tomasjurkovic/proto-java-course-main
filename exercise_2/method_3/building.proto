@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+// this is created using imports in files
+
+import "street.proto";
+
+message Building {
+    string building_name = 1;
+    uint32 building_number = 2;
+    Street street = 3;
+}
